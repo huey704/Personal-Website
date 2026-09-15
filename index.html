@@ -15,35 +15,9 @@
             text-align: justify;
             color: rgb(95, 245, 82);
             background-image: url(1ae3f640985bcadaec54dcebae69f7f8.jpg);
-            background-repeat: repeat;
+
         }
 
-        /* @keyframes backgroundAnimation {
-            0% {
-                background-color: red;
-            }
-
-            25% {
-                background-color: yellow;
-            }
-
-            50% {
-                background-color: blue;
-            }
-
-            100% {
-                background-color: green;
-            }
-        }
-
-        div {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            animation-name: backgroundAnimation;
-            animation-duration: 4s;
-        }
-        */
         .column {
             position: relative;
             float: left;
@@ -68,21 +42,19 @@
         }
 
         .glow {
-            /* adds glowing animations to the headers */
             color: rgb(0, 255, 0);
-            text-shadow: 0 0 10px;
-            animation: glow 1s ease-in-out infinite alternate;
+            text-shadow: 0 0 10px #5ae966, 0 0 20px #08e600;
+            animation: glowPulse 1.5s ease-in-out infinite alternate;
         }
 
-        @-webkit-keyframes glow {
+        @keyframes glowPulse {
             from {
-                text-shadow: 0 0 10px #5ae966, 0 0 20px #5ae966, 0 0 10px #08e600, 0 0 20px #08e600, 0 0 50px #08e600, 0 0 60px #08e600, 0 0 70px #08e600;
+                opacity: 1.50;
             }
 
             to {
-                text-shadow: 0 0 10px #5ae966, 0 0 30px #08e600, 0 0 30px #08e600, 0 0 50px #08e600, 0 0 60px #08e600, 0 0 80px #08e600, 0 0 50px #08e600;
+                opacity: 2.25;
             }
-
         }
 
         /* social media buttons */
@@ -109,7 +81,6 @@
             bottom: 430px;
             right: 1540px;
             height: 380px;
-
 
         }
 
